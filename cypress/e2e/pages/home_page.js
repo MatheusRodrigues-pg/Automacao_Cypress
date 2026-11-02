@@ -3,7 +3,7 @@ class HomePage {
   // --- Seletores do Header (Menu de Navegação) ---
   get homeLink() { return cy.get('a[href="/"]') }
   get productsLink() { return cy.get('a[href="/products"]')}
-  get cartLink() { return cy.get('a[href="/view_cart"]') }
+  get cartLink() { return cy.get('header a[href="/view_cart"]').first() }
   get loginSignupLink() { return cy.get('a[href="/login"]') }
   get testCasesLink() { return cy.get('a[href="/test_cases"]') }
   get apiListLink() { return cy.get('a[href="/api_list"]') }
@@ -43,6 +43,12 @@ class HomePage {
       telefone: faker.phone.number()
     }
   }
+
+  // --- Subscription ---
+  get subscriptionHeader() { return cy.contains('Subscription') }
+  get emailInput() { return cy.get('#susbscribe_email') }
+  get subscribeButton() { return cy.get('#subscribe') }
+  get successSubscribeMessage() { return cy.get('#success-subscribe') }
 
   // --- Ações ---
   visit() {

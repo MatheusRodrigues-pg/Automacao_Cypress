@@ -6,6 +6,10 @@ const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esb
 
 module.exports = defineConfig({
   e2e: {
+    retries: {
+      runMode: 1,
+      openMode: 0
+    },
     async setupNodeEvents(on, config) {
       await addCucumberPreprocessorPlugin(on, config)
 
@@ -19,5 +23,7 @@ module.exports = defineConfig({
       return config
     },
     specPattern: "cypress/e2e/features/*.feature",
+    watchForFileChanges: false,
+
   },
 })

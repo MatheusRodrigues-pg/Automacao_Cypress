@@ -8,6 +8,7 @@ class LoginPage {
   get signupNameInput() { return cy.get('[data-qa="signup-name"]') }
   get signupEmailInput() { return cy.get('[data-qa="signup-email"]') }
   get signupButton() { return cy.get('[data-qa="signup-button"]') }
+  get loginToYourAccountTitle() { return cy.get('.login-form h2') }
   get newUserSignupTitle() { return cy.get('.signup-form h2') }
   get enterAccountInformationTitle() { return cy.get('.title.text-center b') }
 
