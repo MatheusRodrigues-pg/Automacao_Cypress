@@ -50,7 +50,7 @@ Antes de clonar e executar o projeto, certifique-se de ter instalado em sua máq
 
 1. **Clone o repositório**:
    ```bash
-   git clone <url-do-repositorio>
+   git clone <https://github.com/MatheusRodrigues-pg/Repos.git>
    cd cypress-project
    ```
 
@@ -70,8 +70,3 @@ Antes de clonar e executar o projeto, certifique-se de ter instalado em sua máq
    ```
    *Com o painel aberto, selecione **E2E Testing**, escolha o navegador de sua preferência e clique na feature desejada para acompanhar a execução em tempo real.*
 
----
-
-## 👤 Autor
-
-Desenvolvido com foco em excelência técnica, automação robusta e qualidade de software.
